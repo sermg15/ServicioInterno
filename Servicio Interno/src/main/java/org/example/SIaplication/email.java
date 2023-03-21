@@ -9,7 +9,7 @@ public class email {
 
     public email(String destinatario, String mensaje, String asunto){
         this.destinatario = destinatario;
-        this.origen = "supermercasapractica@gmail.com";
+        this.origen = "supermercasa@outlook.es";
         this.mensaje = mensaje;
         this.asunto = asunto;
     }
@@ -18,7 +18,7 @@ public class email {
 
     public email(String destinatario, String asunto){
         this.destinatario = destinatario;
-        this.origen = "supermercasapractica@gmail.com";
+        this.origen = "supermercasa@outlook.es";
         this.asunto = asunto;
     }
 

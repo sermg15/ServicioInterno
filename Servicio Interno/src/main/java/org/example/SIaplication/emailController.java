@@ -16,6 +16,7 @@ public class emailController {
     @PostMapping("/email")
     public ResponseEntity<Void> enviarNotificacion(@RequestBody email Email){
         boolean respuesta = envioCorreo.send(Email);
+        System.out.println(Email.getMensaje());
         if(respuesta){
             return new ResponseEntity<>(HttpStatus.CREATED);
         }else {
