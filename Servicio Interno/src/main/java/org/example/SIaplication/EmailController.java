@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class emailController {
+public class EmailController {
 
     @Autowired
-    private emailService envioCorreo;
+    private EmailService envioCorreo;
 
     @PostMapping("/email")
-    public ResponseEntity<Void> enviarNotificacion(@RequestBody email Email){
+    public ResponseEntity<Void> enviarNotificacion(@RequestBody Email Email){
         boolean respuesta = envioCorreo.send(Email);
         System.out.println(Email.getMensaje());
         if(respuesta){

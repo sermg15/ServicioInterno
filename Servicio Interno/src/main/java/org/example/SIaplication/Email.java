@@ -1,22 +1,22 @@
 package org.example.SIaplication;
 
-public class email {
+public class Email {
 
     private String destinatario;
     private String origen;
     private String mensaje;
     private String asunto;
 
-    public email(String destinatario, String mensaje, String asunto){
+    public Email(String destinatario, String mensaje, String asunto){
         this.destinatario = destinatario;
         this.origen = "supermercasa@outlook.es";
         this.mensaje = mensaje;
         this.asunto = asunto;
     }
 
-    public email(){}
+    public Email(){}
 
-    public email(String destinatario, String asunto){
+    public Email(String destinatario, String asunto){
         this.destinatario = destinatario;
         this.origen = "supermercasa@outlook.es";
         this.asunto = asunto;

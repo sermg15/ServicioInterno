@@ -9,12 +9,12 @@ import javax.mail.internet.MimeMessage;
 
 
 @Service
-public class emailService {
+public class EmailService {
 
     @Autowired
     private JavaMailSender sender;
 
-        public boolean send(email mensaje){
+        public boolean send(Email mensaje){
 
         MimeMessage email = sender.createMimeMessage();
         try {

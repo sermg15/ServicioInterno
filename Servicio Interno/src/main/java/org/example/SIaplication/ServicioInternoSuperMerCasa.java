@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class servicioInternoSuperMerCasa {
+public class ServicioInternoSuperMerCasa {
 
     public static void main(String[] args){
-        SpringApplication.run(servicioInternoSuperMerCasa.class, args);
+        SpringApplication.run(ServicioInternoSuperMerCasa.class, args);
     }
 }
